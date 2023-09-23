@@ -3,7 +3,7 @@
 #SBATCH -n 1
 #SBATCH -N 1
 #SBATCH -c 15
-#SBATCH --mem=20G
+#SBATCH --mem=50G
 #SBATCH --partition=general
 #SBATCH --qos=general
 #SBATCH --mail-type=ALL
@@ -31,11 +31,10 @@ STRINGTIE=quant_stringtie
 mkdir -p $STRINGTIE
 
 # accession list
-ACCLIST=../01_raw_data/accessionlist.txt
+ACCLIST=./accessionlist.txt
 
 # genome fasta
-GENOME=../genome/Fundulus_heteroclitus.Fundulus_heteroclitus-3.0.2.dna.toplevel.fa
-
+GENOME=/home/FCAM/skurkcu/Marina/genome/Homo_sapiens.GRCh38.dna.toplevel.fa
 # stringtie gtf file
 GTF=../07_stringtie/merged_transcripts/merged.gtf
 

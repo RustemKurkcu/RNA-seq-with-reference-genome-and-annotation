@@ -1,0 +1,19 @@
+whoami: cannot find name for user ID 377699
+whoami: cannot find name for user ID 377699
+whoami: cannot find name for user ID 377699
+whoami: cannot find name for user ID 377699
+whoami: cannot find name for user ID 377699
+
+Error: FASTA file not found /home/FCAM/skurkcu/Marina/genome/hisat2_index2/Homo_sapiens.GRCh38.cds.all.fa
+
+Error: kallisto index file not found ensembl_transcripts.idx
+
+
+Error: kallisto index file not found ensembl_transcripts.idx
+
+
+Error: kallisto index file not found ensembl_transcripts.idx
+
+
+Error: kallisto index file not found ensembl_transcripts.idx
+

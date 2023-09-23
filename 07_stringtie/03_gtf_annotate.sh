@@ -3,7 +3,7 @@
 #SBATCH -n 1
 #SBATCH -N 1
 #SBATCH -c 2
-#SBATCH --mem=2G
+#SBATCH --mem=10G
 #SBATCH --partition=general
 #SBATCH --qos=general
 #SBATCH --mail-type=ALL
@@ -26,7 +26,7 @@ INDIR=merged_transcripts
 OUTDIR=annotated_transcripts
 mkdir -p $OUTDIR
 
-REFGTF=../genome/Fundulus_heteroclitus.Fundulus_heteroclitus-3.0.2.105.gtf
+REFGTF=/home/FCAM/skurkcu/Marina/genome/hisat2_index2/Fhet.gtf
 MERGEDGTF=$INDIR/merged.gtf
 
 # run gffcompare

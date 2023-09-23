@@ -1,0 +1,13 @@
+{
+	"n_targets": 286532,
+	"n_bootstraps": 100,
+	"n_processed": 0,
+	"n_pseudoaligned": 0,
+	"n_unique": 0,
+	"p_pseudoaligned": 0.0,
+	"p_unique": 0.0,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Wed Sep 13 18:02:38 2023",
+	"call": "kallisto quant -i stringtie_transcripts.idx -o quant_stringtie/Kuo18_S148_L004_ -b 100 /dev/fd/63 /dev/fd/62"
+}

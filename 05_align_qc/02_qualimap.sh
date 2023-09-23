@@ -24,15 +24,15 @@ module load parallel/20180122
 
 # input, output directories--------------------------------------------------------------
 
-INDIR=../04_align/alignments
+INDIR=../04_align/alignment
 OUTDIR=qualimap_reports
 mkdir -p $OUTDIR
 
 # gtf annotation is required here
-GTF=../genome/Fundulus_heteroclitus.Fundulus_heteroclitus-3.0.2.105.gtf
+GTF=/home/FCAM/skurkcu/Marina/Fibroblast/genome/Homo_sapiens.GRCh38.106.chr.gtf
 
 # accession list
-ACCLIST=../01_raw_data/accessionlist.txt
+ACCLIST=./accessionlist.txt
 
 # run qualimap in parallel
 cat $ACCLIST | \
@@ -42,4 +42,4 @@ parallel -j 5 \
         -bam $INDIR/{}.bam \
         -gtf $GTF \
         -outdir $OUTDIR/{} \
-        --java-mem-size=2G  
+        --java-mem-size=5G  

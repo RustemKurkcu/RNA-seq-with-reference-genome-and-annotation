@@ -7,7 +7,7 @@
 #SBATCH --partition=general
 #SBATCH --qos=general
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=first.last@uconn.edu
+#SBATCH --mail-user=shan.kurkcu@uconn.edu
 #SBATCH -o %x_%j.out
 #SBATCH -e %x_%j.err
 
@@ -22,8 +22,9 @@ date
 module load parallel/20180122
 module load sratoolkit/3.0.1
 
-# The data are a subset (2 populations) from this study:
-    # https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156460
+# The data are 
+    # PBMC_RNA_DATA
+    
 
 
 ACCLIST=accessionlist.txt
